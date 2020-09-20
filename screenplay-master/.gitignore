@@ -1,0 +1,14 @@
+.idea/*
+*.iml
+.settings
+.project
+.classpath
+.DS_Store
+.editorconfig
+bin/
+target/
+src/test/resources/application-local.properties
+!.idea/runConfigurations
+.idea/runConfigurations/Cucumber__Browserstack_debug.xml
+/src/test/resources/application-local-webapp.properties
+browserstack.err
