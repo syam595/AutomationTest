@@ -8,6 +8,7 @@ import net.thucydides.core.annotations.Step;
 
 import static com.play.serenity.test.ui.GoogleHomePage.SEARCH_BOX;
 import static com.play.serenity.test.ui.GoogleHomePage.SEARCH_BUTTON;
+import static com.play.serenity.test.ui.UnivivaHomePage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SearchForKeyword implements Task {
@@ -23,8 +24,8 @@ public class SearchForKeyword implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Type.theValue(keyword).into(SEARCH_BOX),
-                Click.on(SEARCH_BUTTON)
+                Type.theValue(keyword).into(EMAIL),
+                Click.on(LOGIN_BUTTON)
         );
     }
 
