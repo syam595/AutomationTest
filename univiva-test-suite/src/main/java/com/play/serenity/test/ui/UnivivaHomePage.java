@@ -11,15 +11,18 @@ public class UnivivaHomePage extends PageObject {
 
     public static final Target EMAIL = Target
             .the("Email")
-            .locatedBy("//*[@id='email']");
+            .locatedBy("//input[@id='email']");
 
 
     public static final Target PASSWORD = Target
             .the("Password")
-            .locatedBy("//*[@id=\'passwordField-1\']");
+            .locatedBy("//input[@id='passwordField-1']");
 
     public static final Target LOGIN_BUTTON = Target
             .the("Login Button")
-            .locatedBy("//*[@id=\'app\']/div[2]/div[1]/div/form/button");
+            .locatedBy("//button[@type='submit']");
 
+    public static final Target COOKIE_ACCEPT_BUTTON = Target
+            .the("Cookie Accept All Button")
+            .locatedBy("//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
 }

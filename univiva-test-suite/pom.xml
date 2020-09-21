@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.play.serenity.test</groupId>
-    <artifactId>ssundar-screenplay</artifactId>
+    <artifactId>univiva-test-suite</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>ssundar-screenplay</name>
+    <name>univiva-test-suite</name>
     <description>Serenity screenplay experiments</description>
 
     <parent>

@@ -11,12 +11,14 @@ import static com.play.serenity.test.ui.GoogleHomePage.SEARCH_BUTTON;
 import static com.play.serenity.test.ui.UnivivaHomePage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class SearchForKeyword implements Task {
+public class EnterCredentials implements Task {
 
-    private String keyword;
+    private String email;
+    private String password;
 
-    public SearchForKeyword(String keyword) {
-        this.keyword = keyword;
+    public EnterCredentials(String email, String password) {
+        this.email = email;
+        this.password= password;
     }
 
     @Override
@@ -24,12 +26,13 @@ public class SearchForKeyword implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Type.theValue(keyword).into(EMAIL),
+                Type.theValue(email).into(EMAIL),
+                Type.theValue(password).into(PASSWORD),
                 Click.on(LOGIN_BUTTON)
         );
     }
 
-    public static SearchForKeyword withValue(String keyword) {
-        return instrumented(SearchForKeyword.class, keyword);
+    public static EnterCredentials withValues(String email, String password) {
+        return instrumented(EnterCredentials.class, email, password);
     }
 }
