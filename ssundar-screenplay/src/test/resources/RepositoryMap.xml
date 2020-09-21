@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <root>
     <windows>
-        <driver id="internetexplorer">
+       <!-- <driver id="internetexplorer">
           <version id="3.10.0">
             <bitrate sixtyfourbit="true"  thirtytwobit="true">
               <filelocation>http://selenium-release.storage.googleapis.com/3.10/IEDriverServer_Win32_3.10.0.zip</filelocation>
@@ -18,7 +18,7 @@
                     <hashtype>sha1</hashtype>
                 </bitrate>
             </version>
-        </driver>
+        </driver>-->
         <driver id="googlechrome">
             <version id="2.44">
                 <bitrate thirtytwobit="true" sixtyfourbit="true">

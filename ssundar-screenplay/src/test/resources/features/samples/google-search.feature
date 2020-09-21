@@ -4,6 +4,6 @@ Feature: Keyword search in google
     Given Joan has opened google page
 
   @google
-  Scenario: To verify if user is able to opena nd search in Google
+  Scenario: To verify if user is able to open and search in Google
     When she search for a keyword ""
     Then results are displayed
