@@ -20,8 +20,8 @@ public class MyStepdefs extends StepDefinitionBase{
 
     @When("^she enters valid credentials$")
     public void sheEntersValidCredentials() throws Throwable {
-        String email="stagetest@sharklasers.com";
-        String password="Stagetest@123";
+        String email= testProperties.getEmail();
+        String password=testProperties.getPassword();
         theActorInTheSpotlight()
                 .attemptsTo(
                         SetCookiesPreference.asAcceptAllCookies(),

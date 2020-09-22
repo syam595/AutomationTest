@@ -8,7 +8,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TestProperties {
 
-  //@Value("${webapp.url}")
-  private String webAppUrl="https://" + "apollo19" + ":" + "whiskey apollo joke sexy dog" + "@" + "staging.univiva.de/sign-in";
+  @Value("${webapp.url}")
+  private String webAppUrl;
+
+  @Value("${email}")
+  private String email;
+
+  @Value("${password}")
+  private String password;
 
 }
