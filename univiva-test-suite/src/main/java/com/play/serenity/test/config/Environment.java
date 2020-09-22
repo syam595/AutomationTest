@@ -3,8 +3,7 @@ package com.play.serenity.test.config;
 public enum Environment {
 
   DEV("dev"),
-  SIT("sit"),
-  UAT("uat"),
+  E2E("e2e"),
   PROD("prod"),
   LOCAL("local"),
   LOCAL_WEBAPP("local-webapp");
